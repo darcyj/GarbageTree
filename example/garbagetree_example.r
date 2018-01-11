@@ -2,6 +2,7 @@
 	source("../GarbageTree_functions.r")
 
 # read in fasta file as named list
+	# file MUST be in sequential (NOT INTERLEAVED) format
 	seqs <- read.fastx("zotu_seeds_filt.fasta.gz", type="fasta")
 
 # cluster at multiple levels, storing result as a list of clustering tables
