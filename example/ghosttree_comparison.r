@@ -30,7 +30,7 @@
 	# X11 and pdfs don't like millions of points, raster images are OK.
 	tb <- (col2rgb("black")/255)
 	tb <- rgb(tb[1], tb[2], tb[3], 0.25)
-	jpeg("whatever.jpg", width=1000, height=1000)
+	jpeg("ghost_garbage_cophenetics.jpg", width=1000, height=1000)
 
 	plot(as.dist(garbage_coph) ~ as.dist(ghost_coph), 
 		ylab="GarbageTree cophenetic", 
